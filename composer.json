@@ -6,7 +6,7 @@
 		{
 			"name": "Kilyakus",
 			"email": "aleksandr.kilyakov@gmail.com"
-		},
+		}
 	],
 	"require":{
 		"bower-asset/slick-carousel":"@stable"
