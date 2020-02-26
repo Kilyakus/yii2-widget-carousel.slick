@@ -7,9 +7,9 @@ use yii\helpers\Json;
 
 class Carousel extends \yii\base\Widget
 {
-    public $container   = '.slick';
+    public $container = '.slick';
 
-    public $settings    = [];
+    public $pluginOptions = [];
 
     public function init()
     {
@@ -21,16 +21,18 @@ class Carousel extends \yii\base\Widget
         return $this->registerSlickJs();
     }
 
-    private function registerSlickJs(){
-        $jQueryContainer = "$('{$this->container}')";
+    private function registerSlickJs()
+    {
         CarouselAssets::register($this->view);
+        
+        $jQueryContainer = "$('{$this->container}')";
 
-        if(!empty($this->settings)){
+        if(!empty($this->pluginOptions)){
             $var = uniqid('$container');
             $query = "var {$var} =  {$jQueryContainer};".PHP_EOL;
 
-            if(!is_null($this->settings)){
-                $opt = Json::encode($this->settings);
+            if(!is_null($this->pluginOptions)){
+                $opt = Json::encode($this->pluginOptions);
                 $query .= "{$var}.slick({$opt});".PHP_EOL;
             }else{
                 $query .= "{$var}.slick();".PHP_EOL;
