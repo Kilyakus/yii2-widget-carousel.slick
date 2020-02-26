@@ -3,8 +3,6 @@ yii2-widget-carousel.slick
 
 [Demos](http://kenwheeler.github.io/slick/ "http://kenwheeler.github.io/slick/")
 
-!!! This widget generate you the only the javascript.
-
 ```
 use kilyakus\widget\slick\Carousel;
 ```
