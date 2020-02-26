@@ -9,7 +9,7 @@ class Carousel extends \yii\base\Widget
 {
     public $container = '.slick';
 
-    public $pluginOptions = [];
+    public $clientOptions = [];
 
     public function init()
     {
@@ -24,15 +24,15 @@ class Carousel extends \yii\base\Widget
     private function registerSlickJs()
     {
         CarouselAssets::register($this->view);
-        
+
         $jQueryContainer = "$('{$this->container}')";
 
-        if(!empty($this->pluginOptions)){
+        if(!empty($this->clientOptions)){
             $var = uniqid('$container');
             $query = "var {$var} =  {$jQueryContainer};".PHP_EOL;
 
-            if(!is_null($this->pluginOptions)){
-                $opt = Json::encode($this->pluginOptions);
+            if(!is_null($this->clientOptions)){
+                $opt = Json::encode($this->clientOptions);
                 $query .= "{$var}.slick({$opt});".PHP_EOL;
             }else{
                 $query .= "{$var}.slick();".PHP_EOL;
