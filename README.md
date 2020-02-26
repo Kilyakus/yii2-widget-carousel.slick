@@ -12,7 +12,7 @@ use kilyakus\widget\slick\Carousel;
 ```
 echo Carousel::widget([
 	'container' => '.slider-for',
-	'settings'  => [
+	'clientOptions'  => [
 		'accessibility' => false,
 		'centerMode' => false,
 		// 'variableWidth' => true,
