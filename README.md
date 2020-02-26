@@ -1,7 +1,7 @@
 yii2-widget-carousel.slick
 ==========
 
-[the Preview http://kenwheeler.github.io/slick/](http://kenwheeler.github.io/slick/ "http://kenwheeler.github.io/slick/")
+[Demos](http://kenwheeler.github.io/slick/ "http://kenwheeler.github.io/slick/")
 
 !!! This widget generate you the only the javascript.
 
