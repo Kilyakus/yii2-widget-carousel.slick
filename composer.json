@@ -1,0 +1,19 @@
+{
+	"name":  "kilyakus/yii2-widget-carousel.slick",
+	"type": "yii2-extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kilyakus",
+			"email": "aleksandr.kilyakov@gmail.com"
+		},
+	],
+	"require":{
+		"bower-asset/slick-carousel":"@stable"
+	},
+	"autoload": {
+		"psr-4": {
+			"kilyakus\\widget\\slick\\": "src"
+		}
+	}
+}
