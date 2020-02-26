@@ -29,11 +29,12 @@ class Carousel extends \yii\base\Widget
             $var = uniqid('$container');
             $query = "var {$var} =  {$jQueryContainer};".PHP_EOL;
 
-            if(!is_null($this->settings))
+            if(!is_null($this->settings)){
                 $opt = Json::encode($this->settings);
                 $query .= "{$var}.slick({$opt});".PHP_EOL;
-            else
+            }else{
                 $query .= "{$var}.slick();".PHP_EOL;
+            }
 
             return $this->view->registerJs($query,View::POS_READY);
         }
