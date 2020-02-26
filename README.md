@@ -1,7 +1,7 @@
 yii2-widget-carousel.slick
 ==========
 
-[Demos](http://kenwheeler.github.io/slick/ "http://kenwheeler.github.io/slick/")
+Demos: [http://kenwheeler.github.io/slick/](http://kenwheeler.github.io/slick/ "http://kenwheeler.github.io/slick/")
 
 ```
 use kilyakus\widget\slick\Carousel;
