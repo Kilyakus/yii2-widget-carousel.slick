@@ -13,7 +13,7 @@ class Carousel extends \yii\base\Widget
 
     public function init()
     {
-
+        
     }
 
     public function run()

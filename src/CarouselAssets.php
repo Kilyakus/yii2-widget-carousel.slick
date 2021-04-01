@@ -8,7 +8,7 @@ class CarouselAssets extends \yii\web\AssetBundle
         'slick/slick.css'
     ];
     public $js = [
-        "slick/slick.min.js",
+        "slick/slick.js",
     ];
     public $depends = [
         'yii\web\JqueryAsset',
